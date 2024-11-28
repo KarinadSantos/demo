@@ -25,8 +25,16 @@ def principal():
     tela.setup(LARG,ALT)
     tela.title('Manima: Animações que me animam')
 
-    gato = Pen('gato_.gif')
+    gato = Pen('gato_.gif', False)
     gato.up()
+    gato.goto(-LARG//2, -ALT//2)
+    gato.showturtle()
+    X_INI = -LARG//2
+    X_FIM = LARG//2
+    Y_FIXO = 10-ALT//2
+    for x in range(X_INI, X_FIM, 5)
+     gato.goto(x, Y_FIXO)
+
 
     turtle.done()
 
